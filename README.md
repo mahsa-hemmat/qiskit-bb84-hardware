@@ -1,8 +1,8 @@
-# BB84 Quantum Key Distribution on NISQ Hardware
+# BB84 Quantum Key Distribution
 
 An algorithmic and physical implementation of the BB84 Quantum Key Distribution (QKD) protocol using Qiskit. This project evaluates the protocol's theoretical security guarantees against practical hardware constraints, featuring scalable temporal-batching execution on physical IBM Quantum processors.
 
-*Developed as a Master's Mini-Project in Quantum Information and Computing (QIC).*
+*Developed as a Mini-Project in Quantum Information and Computing (QIC).*
 
 ## Key Features
 
@@ -26,3 +26,8 @@ The implementation successfully proves that intercept-resend attacks remain high
    ```bash
    git clone [https://github.com/mahsa-hemmat//qiskit-bb84-hardware.git](https://github.com/mahsa-hemmat//qiskit-bb84-hardware.git)
    cd qiskit-bb84-hardware
+   # Create and activate a virtual environment
+   python3 -m venv env
+   source env/bin/activate
+   pip install -r requirements.txt
+   # To execute the hardware batching test on physical IBM devices, authenticate with your IBM Quantum API token.
